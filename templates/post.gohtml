@@ -1,0 +1,14 @@
+{{define "content"}}
+{{with .CurPost}}
+<p>Go back to the <a href="/">index</a>.</p>
+
+<h1>{{.Title}}</h1>
+<p>
+    <small>By {{.Author}}, {{.Date.Weekday}} {{.Date.Month}} {{.Date.Day}}, {{.Date.Year}}</small>
+</p>
+
+<article>
+    {{.Content}}
+</article>
+{{end}}
+{{end}}
