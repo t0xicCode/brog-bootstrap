@@ -23,6 +23,10 @@ footer .container {
     color: #F5F5F5;
 }
 
+header {
+    text-align: center;
+}
+
 .content-body {
     background-color: #F5F5F5;
     height: 100%;
@@ -30,6 +34,20 @@ footer .container {
 
 .main {
     background-color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #444;
+}
+
+h2 {
+    color: #666;
+}
+
+h2 a {
+    color: #666;
+    text-decoration: none;
 }
 
 /* Code styling, taken from golang.org and modified */
