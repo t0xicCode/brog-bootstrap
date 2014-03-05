@@ -1,9 +1,17 @@
 {{define "content"}}
 <article>
 {{range .Posts}}
-<h2><a href="/posts/{{.GetID}}">{{.Title}}</a></h2>
-<p><small>By {{.Author}}, {{.Date.Weekday}} {{.Date.Day}} {{.Date.Month}} {{.Date.Year}}</small></p>
-<p><small>{{.Abstract}}</small></p>
-{{else}}<div><h2>There are not post on this blog!</h2></div>{{end}}
+	<div class="posts">
+		<h2><a href="/posts/{{.GetID}}">{{.Title}}</a></h2>
+		<div>
+			<p><small>By {{.Author}}, {{.Date.Weekday}} {{.Date.Day}} {{.Date.Month}} {{.Date.Year}}</small></p>
+			<div>{{.Abstract}}</div>
+		</div>
+	</div>
+{{else}}
+	<div>
+		<h2>There are not post on this blog!</h2>
+	</div>
+{{end}}
 </article>
 {{end}}
