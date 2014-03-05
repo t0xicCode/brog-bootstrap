@@ -1,1 +1,4 @@
 *.log
+brog_config.json
+posts/*
+pages/*
