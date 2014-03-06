@@ -1,6 +1,6 @@
 {{define "content"}}
 <article>
-{{range .Posts}}
+	{{range .Posts}}
 	<div class="posts">
 		<h2><a href="/posts/{{.GetID}}">{{.Title}}</a></h2>
 		<div>
@@ -8,10 +8,10 @@
 			<div>{{.Abstract}}</div>
 		</div>
 	</div>
-{{else}}
+	{{else}}
 	<div>
 		<h2>There are not post on this blog!</h2>
 	</div>
-{{end}}
+	{{end}}
 </article>
 {{end}}

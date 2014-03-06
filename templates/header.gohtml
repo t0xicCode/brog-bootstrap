@@ -1,8 +1,10 @@
 {{define "header"}}
 <div>
 	<h1>My Brog</h1>
-	{{range .Pages}}
-	<span class="page-link"><a href="/pages/{{.GetID}}">{{.Title}}</a></span>
-	{{end}}
+	<div>
+		{{range .Pages}}
+		<span class="page-link"><a href="/pages/{{.GetID}}">{{.Title}}</a></span>
+		{{end}}
+	</div>
 </div>
 {{end}}

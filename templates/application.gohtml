@@ -2,8 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     {{with .CurPost}}
     <title>{{.Title}}</title>
     <meta name="description" content="{{.Abstract}}">
@@ -13,19 +11,25 @@
     {{end}}
     {{template "style" .}}
 </head>
+
 <body>
-	<div class="content-body">
-		<div class="container main">
-			<header class="page-header">{{template "header" .}}</header>
+<header>{{template "header" .}}</header>
+<div id="content">{{template "content" .}}</div>
+<footer>{{template "footer" .}}</footer>
+{{template "javascript" .}}
+</body>
+
+</html>
+ge-header">{{template "header" .}}</header>
 			<div id="content">{{template "content" .}}</div>
 		</div>
 	</div>
-	
+
 	<footer>
 		<div class="container">
 			{{template "footer" .}}
 		</div>
 	</footer>
-{{template "javascript" .}}
+	{{template "javascript" .}}
 </body>
 </html>
