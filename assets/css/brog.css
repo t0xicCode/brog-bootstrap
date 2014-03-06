@@ -28,6 +28,16 @@ header {
     text-align: center;
 }
 
+.page-link:after {
+	content: "|";
+	margin-left: 5px;
+}
+
+.page-link:last-of-type:after {
+	content: none;
+	margin-left: 0;
+}
+
 .content-body {
     background-color: #F5F5F5;
     height: 100%;
